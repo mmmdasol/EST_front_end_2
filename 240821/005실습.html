@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        display: inline-block;
+      }
+
+      .hidden {
+        position: absolute;
+        clip: rect(0 0 0 0);
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+      }
+
+      .left {
+        width: 288px;
+        height: 348px;
+        border-radius: 8px;
+        margin: 50px 20px 50px 50px;
+        box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.1);
+      }
+
+      .left > img {
+        width: 100%;
+        border-radius: 8px 8px 0 0;
+      }
+
+      .card {
+        margin: 15px;
+      }
+
+      .header {
+        height: 50px;
+      }
+
+      [class$="title1"] {
+        box-sizing: 200px 20px;
+        font-weight: bold;
+        font-size: 16px;
+      }
+
+      .body {
+        box-sizing: 256px 40px;
+        font-weight: 400;
+        font-size: 12px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+      }
+
+      .read {
+        font-weight: 700;
+        font-size: 14px;
+        text-decoration: underline;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .right {
+        width: 288px;
+        height: 374px;
+        border-radius: 8px;
+        margin: 50px 20px 50px 50px;
+        box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.1);
+      }
+
+      .profile {
+        width: 40px;
+        margin: 15px 20px 15px 20px;
+        border-radius: 100px;
+      }
+
+      [class$="title2"] {
+        box-sizing: 200px 20px;
+        font-weight: bold;
+        font-size: 19px;
+        display: inline-block;
+      }
+
+      .right > img {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <article class="left">
+        <h2 class="hidden">카드 UI A타입</h2>
+        <img src="./005실습/thumbnail.png" alt="게시글 이미지" />
+        <p class="card title1">그것을 피가 청춘을 것이다</p>
+        <p class="card body">
+          청춘의 하였으며, 이것은 몸이 때문이다. 사는가 고동을 용기가 충분히
+          청춘 것이다. 얼마나 반짝이는 소담스...운 열락의 아름다우냐? 가지에
+          같지 청춘의 옷을 목숨을 피어나기 오직 군영과 칼이다. 거친 끓는 예가
+          뿐이다. 방지하는 꽃이 청춘을 생명을 이것이다. 인간의 거선의 피고,
+          모래뿐일 작고 우리 평화스러운 있는가?
+        </p>
+        <a href="#"><p class="card read">Read</p></a>
+      </article>
+      <article class="right">
+        <h2 class="hidden">카드 UI B타입</h2>
+        <div class="header">
+          <img
+            src="./005실습/profile.png"
+            alt="secondary님 프로필"
+            class="profile"
+          />
+          <p class="card title2">그것을 피가 청춘을 것이다</p>
+          <p class="card writer">secondary</p>
+        </div>
+
+        <img
+          src="./005실습/thumbnail.png"
+          alt="게시글 이미지"
+          class="thumbnail"
+        />
+        <p class="card body">
+          청춘의 하였으며, 이것은 몸이 때문이다. 사는가 고동을 용기가 충분히
+          청춘 것이다. 얼마나 반짝이는 소담스...운 열락의 아름다우냐? 가지에
+          같지 청춘의 옷을 목숨을 피어나기 오직 군영과 칼이다. 거친 끓는 예가
+          뿐이다. 방지하는 꽃이 청춘을 생명을 이것이다. 인간의 거선의 피고,
+          모래뿐일 작고 우리 평화스러운 있는가?
+        </p>
+        <div class="card bottom">
+          <div class="card bottom read">
+            <a href="#"><p class="card read">Read</p></a>
+            <a href="#"><p class="card read2">></p></a>
+          </div>
+          <div class="card bottom icon">
+            <button type="button"><img src="./005실습/icon-heart.png" alt="좋아요" /></button>
+            <butto type="button">
+              <img src="./005실습/icon-share.png" alt="공유하기" />
+            </button>
+            <button type="button"><img src="./005실습/icon-more.png" alt="더보기" /></button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </body>
+</html>

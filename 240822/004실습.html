@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .wrap {
+                background-color: gainsboro;
+                width: 240px;
+                height: 240px;
+                display: flex;
+                /* justify-content는 또다른 요소가 있을 때 영향을 받을 수 있음 */
+                justify-content: flex-end;
+                /* 교안 정답 (flex-direction은 또다른 요소에 영향을 받지 않음)
+                flex-direction: row-reverse; */
+                align-items: center;
+            }
+
+            .wrap > div {
+                color: white;
+                line-height: 70px;
+                text-align: center;
+                font-size: 20px;
+                width: 70px;
+                height: 70px;
+
+            }
+
+            .blue {
+                background-color: #4967d8;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="blue">A</div>
+        </div>
+    </body>
+</html>
