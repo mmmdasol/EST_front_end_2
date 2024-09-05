@@ -1,0 +1,29 @@
+p {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 1.25em;
+}
+
+.parents {
+  width: 25vw;
+  font-size: 50px;
+  background-color: aquamarine;
+}
+
+.child1 {
+  font-size: 0.5em;
+  width: 50vw;
+  background-color: yellow;
+}
+
+.child2 {
+  font-size: 50%;
+  width: 100vw;
+  background-color: rgb(238, 134, 233);
+}

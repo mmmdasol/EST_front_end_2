@@ -1,0 +1,18 @@
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+button {
+    border: none;
+    padding: ;
+    background: none;
+}
+
+button:hover {
+    cursor: pointer;
+
+    
+}
