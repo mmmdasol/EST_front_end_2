@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>차오르는 카페</title>
+    <style>
+        .cafe {
+            width: 60px;
+            height: 100px;
+            background-image: url(./images/cafe.png);
+            background-repeat: no-repeat;
+            background-size: auto 100%;
+            background-position: left top;
+
+            animation-name: move-cafe;
+            animation-duration: 6s;
+            animation-timing-function: steps(33);
+            animation-iteration-count: infinite;
+            transition: all 0.5s;
+      }
+
+      @keyframes move-cafe {
+        100% {
+          background-position: right bottom;
+        }
+      }
+    </style>
+</head>
+<body>
+    <div class="cafe"></div>
+</body>
+</html>

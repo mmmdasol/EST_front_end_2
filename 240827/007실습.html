@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @font-face {
+        font-family: "NanumSquareNeoLight";
+        src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.eot);
+        src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.eot?#iefix)
+            format("embedded-opentype"),
+          url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.woff)
+            format("woff"),
+          url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.ttf)
+            format("truetype");
+      }
+
+      @font-face {
+        font-family: "NanumSquareNeo";
+        src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.eot);
+        src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.eot?#iefix)
+            format("embedded-opentype"),
+          url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.woff)
+            format("woff"),
+          url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.ttf)
+            format("truetype");
+      }
+
+      @font-face {
+        font-family: "NanumSquareNeoBold";
+        src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.eot);
+        src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.eot?#iefix)
+            format("embedded-opentype"),
+          url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.woff)
+            format("woff"),
+          url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.ttf)
+            format("truetype");
+      }
+
+      @font-face {
+        font-family: "NanumSquareNeoExtraBold";
+        src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-dEb.eot);
+        src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-dEb.eot?#iefix)
+            format("embedded-opentype"),
+          url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-dEb.woff)
+            format("woff"),
+          url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-dEb.ttf)
+            format("truetype");
+      }
+
+      @font-face {
+        font-family: "NanumSquareNeoHeavy";
+        src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-eHv.eot);
+        src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-eHv.eot?#iefix)
+            format("embedded-opentype"),
+          url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-eHv.woff)
+            format("woff"),
+          url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-eHv.ttf)
+            format("truetype");
+      }
+
+      @font-face {
+        font-family: "NanumSquareNeoVariable";
+        src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeo-Variable.eot);
+        src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeo-Variable.eot?#iefix)
+            format("embedded-opentype"),
+          url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeo-Variable.woff)
+            format("woff"),
+          url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeo-Variable.ttf)
+            format("truetype");
+      }
+
+      @font-face {
+        font-family: "Pretendard-EB";
+        src: url("https://mkt-cdn.pstatic.net/mkt/2024/08/openrun05/assets/font/Pretendard/Pretendard-ExtraBold.woff2")
+            format("woff2"),
+          url("https://mkt-cdn.pstatic.net/mkt/2024/08/openrun05/assets/font/Pretendard/Pretendard-ExtraBold.woff")
+            format("woff"),
+          url("https://mkt-cdn.pstatic.net/mkt/2024/08/openrun05/assets/font/Pretendard/Pretendard-ExtraBold.otf")
+            format("opentype");
+      }
+
+      /* YouAndiNewKr */
+      @font-face {
+        font-family: "YouandiNewKr";
+        font-style: normal;
+        font-weight: 300;
+        src: url(https://www.hyundaicard.com/fonts/YouandiNewKrTitle-Light.eot); /* IE9 Compat Modes */
+        src: url(https://www.hyundaicard.com/fonts/YouandiNewKrTitle-Light.eot?#iefix)
+            format("embedded-opentype"),
+          /* IE6 ~ IE8 */
+            url(https://www.hyundaicard.com/fonts/YouandiNewKrTitle-Light.woff2)
+            format("woff2"),
+          /* Supper Modern Browsers */
+            url(https://www.hyundaicard.com/fonts/YouandiNewKrTitle-Light.woff)
+            format("woff"),
+          /* Modern Browsers */
+            /* url(../fonts/YouandiNewKrTitle-Light.ttf) format('truetype'), */
+            url(https://www.hyundaicard.com/fonts/YouandiNewKrTitle-Light.svg)
+            format("svg");
+      }
+      @font-face {
+        font-family: "YouandiNewKr";
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://www.hyundaicard.com/fonts/YouandiNewKrTitle-Regular.eot);
+        src: url(https://www.hyundaicard.com/fonts/YouandiNewKrTitle-Regular.eot#iefix)
+            format("embedded-opentype"),
+          url(https://www.hyundaicard.com/fonts/YouandiNewKrTitle-Regular.woff2)
+            format("woff2"),
+          url(https://www.hyundaicard.com/fonts/YouandiNewKrTitle-Regular.woff)
+            format("woff"),
+          /* url(../fonts/YouandiNewKrTitle-Regular.ttf) format('truetype'), */
+            url(https://www.hyundaicard.com/fonts/YouandiNewKrTitle-Regular.svg)
+            format("svg");
+      }
+      @font-face {
+        font-family: "YouandiNewKr";
+        font-style: normal;
+        font-weight: 700;
+        src: url(https://www.hyundaicard.com/fonts/YouandiNewKrTitle-Bold.eot);
+        src: url(https://www.hyundaicard.com/fonts/YouandiNewKrTitle-Bold.eot#iefix)
+            format("embedded-opentype"),
+          url(https://www.hyundaicard.com/fonts/YouandiNewKrTitle-Bold.woff2)
+            format("woff2"),
+          url(https://www.hyundaicard.com/fonts/YouandiNewKrTitle-Bold.woff)
+            format("woff"),
+          /* url(../fonts/YouandiNewKrTitle-Bold.ttf) format('truetype'), */
+            url(https://www.hyundaicard.com/fonts/YouandiNewKrTitle-Bold.svg)
+            format("svg");
+      }
+      @font-face {
+        font-family: "YouandiNewKr";
+        font-style: normal;
+        font-weight: 800;
+        src: url(https://www.hyundaicard.com/font/YouandiNewKrTitle-ExtraBold.eot);
+        src: url(https://www.hyundaicard.com/font/YouandiNewKrTitle-ExtraBold.eot#iefix)
+            format("embedded-opentype"),
+          url(https://www.hyundaicard.com/font/YouandiNewKrTitle-ExtraBold.woff2)
+            format("woff2"),
+          url(https://www.hyundaicard.com/font/YouandiNewKrTitle-ExtraBold.woff)
+            format("woff"),
+          /* url(../fonts/YouandiNewKrTitle-ExtraBold.ttf) format('truetype'), */
+            url(https://www.hyundaicard.com/font/YouandiNewKrTitle-ExtraBold.svg)
+            format("svg");
+      }
+
+      @keyframes rotateX {
+        from {
+          transform: rotateX(0deg);
+        }
+        to {
+          transform: rotateX(360deg);
+        }
+      }
+
+      @keyframes rotateY {
+        from {
+          transform: rotateY(0deg);
+        }
+        to {
+          transform: rotateY(360deg) scale(1.5);
+        }
+      }
+
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(to right bottom, #f6fff8, #86c5aa) no-repeat;
+      }
+
+      .container:hover .card {
+        transform: perspective(400px) scale(1.5) rotateY(900deg);
+      }
+
+      .card {
+        transition: all 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+        transform-style: preserve-3d;
+        width: 150px;
+        height: 200px;
+        box-shadow: 25px 25px 5px rgba(151, 218, 195, 0.3);
+        border-radius: 15px;
+        background-color: rgb(255, 255, 255);
+        transform: perspective(400px);
+        transform-style: preserve-3d;
+      }
+
+      .card-front {
+      }
+
+      .card-back {
+        box-shadow: 25px 25px 5px rgba(151, 218, 195, 0.3);
+        border-radius: 15px;
+        background-color: rgb(255, 255, 255);
+        font-family: "YouandiNewKr";
+        font-weight: 800;
+      }
+
+      .front,
+      .back {
+        /* position: absolute; */
+        /* backface-visibility: hidden; */
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .front {
+        flex-direction: column;
+      }
+      .card:hover {
+        transform: rotateY(180deg);
+      }
+
+      p {
+        /* font-family: "Pretendard-EB"; */
+        font-size: 40px;
+        line-height: 30px;
+        /* color: white; */
+        /* text-shadow: 1px 4px 4px rgb(255, 255, 255), 0 0 0 #000; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <div class="card front">
+          <h1>?</h1>
+        </div>
+        <div class="card back">
+          <p class="">
+            CHOI<br />DASOL<br />
+            FE Developer
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+@media screen and (max-width: 1920px) {
+    body {
+      display: flex;
+      padding: 240px 360px 260px 360px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+  }
+
+
+  a {
+    text-underline-position: none;
+    text-align: right;
+  }
+
+
+
+  div.img1 {
+    width: 486px;
+    height: 280px;
+    top: 240px;
+    left: 1074px;
+    gap: 0px;
+    opacity: 0px;   
+    background: url(../images/img1.png) no-repeat;
+    padding: 40px;
+    color: white;
+    font-size: 30px;
+    border-radius: 20px 20px 20px 20px;
+  }
+
+  div.img2 {
+    width: 486px;
+height: 280px;
+top: 540px;
+left: 1074px;
+gap: 0px;
+opacity: 0px;
+    background: url(../images/img2.png) no-repeat;
+    padding: 40px;
+    color: white;
+  }
+
+  div.title {
+    font-family: Spoqa Han Sans Neo;
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 87.64px;
+    text-align: left;
+  }

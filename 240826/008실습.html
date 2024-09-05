@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>시계 초침,분침,시침 만들기</title>
+    <style>
+        .container {
+            width: 400px;
+            height: 400px;
+            background-color: #e5e5e5;
+            border-radius: 100px;
+        }
+
+        div {
+            transform-origin: center;
+            transition: transform 3s ease;
+            transform-origin: bottom right;
+            background-position: 50% 50%;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-duration: 0.1s;
+        }
+        .sec {
+            width: 200px;
+            border: 5px solid #fca311;
+            transform: rotate(1turn);
+
+
+        }
+        .min {
+            width: 180px;
+            border: 5px solid #14213d;
+        }
+        .hour {
+            width: 160px;
+            border: 5px solid #4cc9f0;
+        }
+
+
+        @keyframes clock {
+        100% {
+
+      }
+    </style>
+  </head>
+  <body>
+    <article class="container">
+      <div class="sec"></div>
+      <div class="min"></div>
+      <div class="hour"></div>
+    </article>
+  </body>
+</html>
